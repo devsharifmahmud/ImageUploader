@@ -4,4 +4,5 @@ from .models import Image
 
 # Create your views here.
 def home(request):
-    return render(request, 'myapp/home.html')
+    form = ImageForm()
+    return render(request, 'myapp/home.html', {'form': form})
